@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Krystian's Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Krystian's Calculator</h1>
+      <p>Your go-to calculator for all your needs</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="calculator-container">
+      <div class="calculator">
+        <input type="text" id="display" class="display" disabled value="0">
+        <div class="buttons">
+          <button class="btn" onclick="appendNumber('7')">7</button>
+          <button class="btn" onclick="appendNumber('8')">8</button>
+          <button class="btn" onclick="appendNumber('9')">9</button>
+          <button class="btn" onclick="appendOperator('+')">+</button>
+          <button class="btn" onclick="appendNumber('4')">4</button>
+          <button class="btn" onclick="appendNumber('5')">5</button>
+          <button class="btn" onclick="appendNumber('6')">6</button>
+          <button class="btn" onclick="appendOperator('-')">-</button>
+          <button class="btn" onclick="appendNumber('1')">1</button>
+          <button class="btn" onclick="appendNumber('2')">2</button>
+          <button class="btn" onclick="appendNumber('3')">3</button>
+          <button class="btn" onclick="appendOperator('*')">*</button>
+          <button class="btn" onclick="appendNumber('0')">0</button>
+          <button class="btn" onclick="clearDisplay()">C</button>
+          <button class="btn" onclick="calculateResult()">=</button>
+          <button class="btn" onclick="appendOperator('/')">/</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="advertisements">
+      <div class="video-container">
+        <h2>Advertisement</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Krystian's Calculator. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
